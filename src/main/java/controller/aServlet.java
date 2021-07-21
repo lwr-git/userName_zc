@@ -21,7 +21,6 @@ public class aServlet extends HttpServlet {
         String tc = request.getParameter("tc");
         String nd = request.getParameter("nd");
 
-
         List<Hero> hero = userDao.tuili(zy,sex,qsq,tc,nd);
 
         ObjectMapper om  = new ObjectMapper();
